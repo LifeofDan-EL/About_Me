@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="myName"
+            type="com.danielanomfueme.aboutme.MyName" />
+    </data>
+
+<androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,7 +23,7 @@
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name"
+        android:text="@={myName.name}"
         android:textAlignment="center" />
 
     <EditText
@@ -25,6 +34,7 @@
         android:ems="10"
         android:hint="@string/what_is_your_nickname"
         android:inputType="textPersonName"
+        android:text="@={myName.nickname}"
         android:textAlignment="center" />
 
     <Button
@@ -68,3 +78,4 @@
     </ScrollView>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
