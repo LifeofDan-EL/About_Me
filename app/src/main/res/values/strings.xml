@@ -2,6 +2,7 @@
     <string name="app_name">About Me</string>
     <string name="name">Daniel Anomfueme</string>
     <string name="yellow_star">Yellow star</string>
+    <string name="what_is_your_nickname">What is your nickname?</string>
 
     <string name="bio"> Hi, my name is Daniel.
         \n\nI am passionate about Technology
@@ -31,4 +32,5 @@
         \n\nJD JKF KDJ  wdnl jdn wkl jdksn dkkld s jdks jdj sk jdkw.
         \n\niouwty jkhg hg kjh jh dtrfyu ytdjd fg wdkbvg ukyf ajkhg khil
     </string>
+    <string name="done">Done</string>
 </resources>
