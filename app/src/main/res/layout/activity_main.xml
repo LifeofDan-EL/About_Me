@@ -23,8 +23,10 @@
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@={myName.name}"
+        android:text="@{myName.name}"
         android:textAlignment="center" />
+
+
 
     <EditText
         android:id="@+id/nickname_edit"
@@ -34,7 +36,7 @@
         android:ems="10"
         android:hint="@string/what_is_your_nickname"
         android:inputType="textPersonName"
-        android:text="@={myName.nickname}"
+        android:text="@{myName.nickname}"
         android:textAlignment="center" />
 
     <Button
@@ -52,6 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
+        android:text="@{myName.nickname}"
         android:visibility="gone" />
 
     <ImageView
